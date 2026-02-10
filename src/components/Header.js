@@ -100,6 +100,21 @@ const DropdownContent = styled.div`
     color: #f1ede1; /* Text color on hover */
   }
 `;
+const LogoutButton = styled.button`
+  background: none;
+  border: none;
+  color: #3b1112;
+  font-family: '29LT Riwaya', sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: #3b1112;
+    color: #f1ede1;
+  }
+`;
 
 // Dropdown menu styling for small screens
 const DropdownMenu = styled.div`
@@ -215,9 +230,9 @@ const Header = () => {
           </Link>
         )}
         {isLoggedIn ? (
-          <a onClick={handleLogout} style={{ cursor: 'pointer' }}>
+          <LogoutButton  onClick={handleLogout} style={{ cursor: 'pointer' }}>
             تسجيل الخروج
-          </a>
+          </LogoutButton >
         ) : (
           <Link
             to="/login"
@@ -236,9 +251,9 @@ const Header = () => {
         <Link to="/acplaces">الأماكن الأثرية</Link>
         <Link to="/contact">تواصل معنا</Link>
         {isLoggedIn ? (
-          <a onClick={handleLogout} style={{ cursor: 'pointer' }}>
+          <LogoutButton  onClick={handleLogout} style={{ cursor: 'pointer' }}>
             تسجيل الخروج
-          </a>
+          </LogoutButton >
         ) : (
           <Link to="/login">تسجيل الدخول</Link>
         )}
