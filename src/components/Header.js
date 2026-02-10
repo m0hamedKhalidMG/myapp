@@ -194,23 +194,16 @@ const Header = () => {
         >
           عن أثر {activeButton === 'about' && '▼'}
         </Link>
-        <Link
-          to="/services"
-          className={activeButton === 'services' ? 'active' : ''}
-          onClick={() => handleClick('services')}
-        >
-          أنواع الآثار {activeButton === 'services' && '▼'}
-        </Link>
+        
         <ServicesDropdown>
           <Link
-            to="/report"
+            to="/acplaces"
             className={activeButton === 'services-dropdown' ? 'active' : ''}
             onClick={() => handleClick('services-dropdown')}
           >
-            الخدمات {activeButton === 'services-dropdown' && '▼'}
+            الأماكن الأثرية {activeButton === 'services-dropdown' && '▼'}
           </Link>
           <DropdownContent>
-            <Link to="/report">تقديم بلاغ عن أثر</Link>
             <Link to="/acplaces">الأماكن الأثرية</Link>
           </DropdownContent>
         </ServicesDropdown>
@@ -240,8 +233,6 @@ const Header = () => {
       <DropdownMenu isOpen={isMenuOpen}>
         <Link to="/">الرئيسية</Link>
         <Link to="/about">عن أثر</Link>
-        <Link to="/services">أنواع الآثار</Link>
-        <Link to="/report">تقديم بلاغ عن أثر</Link>
         <Link to="/acplaces">الأماكن الأثرية</Link>
         <Link to="/contact">تواصل معنا</Link>
         {isLoggedIn ? (

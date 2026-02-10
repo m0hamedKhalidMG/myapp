@@ -154,19 +154,9 @@ const Footer = () => {
           <Vision2030Logo src={vision2030Image} alt="رؤية السعودية 2030" />
         </LogosContainer>
       </FooterContent>
-      <WhatsAppContainer>
-        <FontAwesomeIcon icon={faWhatsapp} />
-        <a
-  href="https://wa.me/phone"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  Chat with us on WhatsApp
-</a>
-
-      </WhatsAppContainer>
+   
       <p style={{ marginTop: '30px', fontSize: '14px' }}>
-        © 2024 أثر - جميع الحقوق محفوظة
+        © 2026 أثر - جميع الحقوق محفوظة
       </p>
     </FooterContainer>
   );
