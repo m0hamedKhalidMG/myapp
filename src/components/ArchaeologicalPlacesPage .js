@@ -91,14 +91,7 @@ const ImageWithDescription = styled.div`
     transform: translateY(-5px); /* Slight lift on hover for a nice effect */
   }
 `;
-const ImageDescription = styled.p`
-  font-size: 16px;
-  color: #3b1112;
-  padding: 10px;
-  background-color: #f1ede1; /* Match the page's background */
-  border-top: 1px solid #ddd; /* Separates the image from the text */
-  margin: 0;
-`;
+
 const ContentImage = styled.img`
   width: 100%;
   height: 200px; /* Set a uniform height for all images */
