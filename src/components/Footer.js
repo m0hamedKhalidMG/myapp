@@ -90,34 +90,7 @@ const Vision2030Logo = styled.img`
   }
 `;
 
-const WhatsAppContainer = styled.div`
-  margin-top: 20px;
-  text-align: right;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #f9d342;
 
-  a {
-    color: #f9d342;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  svg {
-    font-size: 24px;
-    transition: transform 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-`;
 
 const Footer = () => {
   return (
