@@ -1,8 +1,7 @@
 
 import React from 'react';
 import styled from 'styled-components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+
 import logoImage from '../images/logo.jpg'; // افترض أن لديك صورة اللوغو
 import vision2030Image from '../images/ll.png'; // افترض أن لديك صورة رؤية السعودية 2030
 
