@@ -119,75 +119,22 @@ const Card = styled.div`
   transition: transform 0.2s ease-in-out;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-
-  @media (max-width: 768px) {
-    width: calc(50% - 25px);
-  }
-
-  @media (max-width: 480px) {
-    width: 100%;
+    transform: translateY(-5px); /* Slight lift on hover for a nice effect */
   }
 `;
-
-const CardImage = styled.img`
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-`;
-
-const CardContent = styled.div`
-  padding: 20px;
-  background-color: ${({ type }) => {
-    switch(type) {
-      case 'hotel': return '#e8e2d1';
-      case 'restaurant': return '#f5e6d3';
-      default: return '#f1ede1';
-    }
-  }};
-`;
-
-const CardTitle = styled.h4`
-  color: #3b1112;
-  font-size: 20px;
-  margin: 0 0 10px 0;
-  font-weight: bold;
-`;
-
-const CardDescription = styled.p`
-  color: #3b1112;
+const ImageDescription = styled.p`
   font-size: 16px;
-  line-height: 1.6;
-  margin: 0 0 15px 0;
-`;
-
-const CardInfo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 10px;
-`;
-
-const InfoItem = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 8px;
   color: #3b1112;
-  font-size: 15px;
+  padding: 10px;
+  background-color: #f1ede1; /* Match the page's background */
+  border-top: 1px solid #ddd; /* Separates the image from the text */
+  margin: 0;
 `;
-
-const NoSelectionMessage = styled.div`
-  text-align: center;
-  color: #3b1112;
-  font-size: 20px;
-  padding: 60px;
-  background-color: #fff;
-  border-radius: 15px;
-  margin-top: 20px;
+const ContentImage = styled.img`
+  width: 100%;
+  height: 200px; /* Set a uniform height for all images */
+  object-fit: cover; /* Ensures the image covers the space evenly */
 `;
-
 const ArchaeologicalPlacesPage = () => {
   const [selectedCity, setSelectedCity] = useState(null);
   const [activeTab, setActiveTab] = useState('attractions');

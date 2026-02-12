@@ -1,11 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import bannerImage from '../images/banner.jpg';
 import newsImage1 from '../images/qq.jpeg'; // صورة تخص الخبر الأول
 import newsImage2 from '../images/w.jpeg'; // صورة تخص الخبر الثاني
 import newsImage3 from '../images/qq.jpeg'; // صورة تخص الخبر الثالث
-import newsImage4 from '../images/ww.jpeg'; // صورة تخص الخبر الرابع
 import newsImage5 from '../images/i.jpeg'; // صورة تخص الخبر الخامس
 import batryImage from '../images/batry.png';
 import banomeImage from '../images/banome.jpg';

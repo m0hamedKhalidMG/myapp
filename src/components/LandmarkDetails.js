@@ -46,11 +46,7 @@ const Content = styled.div`
   margin-bottom: 40px;
 `;
 
-const Text = styled.p`
-  color: #3b1112;
-  font-size: 20px;
-  line-height: 1.8;
-`;
+
 
 const ImagesContainer = styled.div`
   display: flex;
