@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import batryImage from '../images/2.jpg';
+import batryImage from '../images/m.jpeg';
 
 const PageContainer = styled.div`
   font-family: '29LT Riwaya', sans-serif;
@@ -25,7 +25,7 @@ const ArabicTitle = styled.h1`
 const ImageWrapper = styled.div`
   width: 100%;
   max-width:  400px;
-  height: 250px;
+  height: 400px;
   margin: 0 auto;
   background-image: url(${batryImage});
   background-size: cover;

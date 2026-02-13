@@ -195,7 +195,7 @@ const ArchaeologicalPlacesPage = () => {
 
   const citiesData = {
     'Al Qassim': {
-      mainImage: require('../images/القصيم/1.jpg'),
+      mainImage: require('../images/القصيم/m.jpeg'),
       attractions: {
         images: [
           require('../images/القصيم/1.jpg'),
@@ -258,7 +258,14 @@ const ArchaeologicalPlacesPage = () => {
           phone: '٠١٦٣٢٦٦٦٦٦',
           rating: '٤ نجوم',
         },
-        
+        {
+    name: 'فندق جلنار القصيم',
+    image: require('../images/القصيم/h7.jpg'),
+    description: 'فندق أنيق يوفر إقامة مريحة وخدمات راقية في منطقة القصيم.',
+    address: 'بريدة - حي النهضة',
+    phone: '٠١٦٣٧٧٧٧٧٧',
+    rating: '٤ نجوم',
+  }
         
       ],
       restaurants: [
@@ -278,11 +285,51 @@ const ArchaeologicalPlacesPage = () => {
           address: 'عنيزة - حليلة السليم',
           phone: '٠١٦٣٦٥٥٥٥٥',
           cuisine: 'نجدي',
-        },
+        },{
+    name: 'مطعم فينور',
+    image: require('../images/القصيم/rest5.jpg'),
+    description: 'مطعم يقدم أطباق متنوعة في أجواء عائلية راقية.',
+    address: 'بريدة - طريق الملك فهد',
+    phone: '٠١٦٣٦٦٦٦٦٦',
+    cuisine: 'متنوع',
+  },
+  {
+    name: 'الميار',
+    image: require('../images/القصيم/rest6.jpg'),
+    description: 'مطعم يقدم المأكولات السعودية والعربية بنكهات مميزة.',
+    address: 'القصيم',
+    phone: '٠١٦٣٦٧٧٧٧٧',
+    cuisine: 'سعودي',
+  },
+  {
+    name: 'نخلا القصيم',
+    image: require('../images/القصيم/rest3.jpg'),
+    description: 'مطعم ومقهى بطابع تراثي وسط أجواء النخيل الجميلة.',
+    address: 'القصيم',
+    phone: '٠١٦٣٦٨٨٨٨٨',
+    cuisine: 'شعبي',
+  },
+  {
+    name: 'عسيب القصيم',
+    image: require('../images/القصيم/rest4.jpg'),
+    description: 'مقهى مختص يقدم القهوة المختصة في أجواء مميزة.',
+    address: 'القصيم',
+    phone: '٠١٦٣٦٩٩٩٩٩',
+    cuisine: 'مقهى مختص',
+  },
+
+  {
+    name: 'مزرعة للنخيل',
+    image: require('../images/القصيم/rest7.jpg'),
+    description: 'مزرعة تحتوي على مقهى مختص وجلسات خارجية وسط النخيل.',
+    address: 'القصيم - خارج المدينة',
+    phone: '٠١٦٣٧١١١١١',
+    cuisine: 'مقهى ومزرعة',
+  }
       ],
     },
     'Al jouf': {
-      mainImage: require('../images/الجوف/1.jpg'),
+      mainImage: require('../images/الجوف/m.jpeg'),
       attractions: {
         images: [
           require('../images/الجوف/1.jpg'),
@@ -353,7 +400,7 @@ const ArchaeologicalPlacesPage = () => {
       ],
     },
    ' Tabuk': {
-      mainImage: require('../images/تبوك/1.jpg'),
+      mainImage: require('../images/القصيم/main.jpeg'),
       attractions: {
         images: [
           require('../images/تبوك/1.jpg'),
@@ -521,6 +568,93 @@ restaurants: [
     address: 'وادي الدواسر - حي الفيصلية',
     phone: '٠١٧٧٨٤٥٦٧٨',
     cuisine: 'متنوع',
+  }, {
+    name: 'تسيتي فود وادي الدواسر',
+    image: require('../images/وادي_الدواسر/rest3.jpg'),
+    description: 'مطعم يقدم وجبات سريعة وأطباق متنوعة تناسب جميع الأذواق.',
+    address: 'وادي الدواسر',
+    phone: '٠٥٥١١١١١١١',
+    cuisine: 'وجبات سريعة',
+  },
+  {
+    name: 'أولف وادي الدواسر',
+    image: require('../images/وادي_الدواسر/rest4.jpg'),
+    description: 'مطعم يقدم أطباق برجر ومأكولات حديثة.',
+    address: 'وادي الدواسر',
+    phone: '٠٥٥٢٢٢٢٢٢٢',
+    cuisine: 'برجر',
+  },
+  {
+    name: 'كافيه سيخ صمونه',
+    image: require('../images/وادي_الدواسر/rest5.jpg'),
+    description: 'مطعم مميز يقدم ساندويتشات ومشاوي بطابع خاص.',
+    address: 'وادي الدواسر',
+    phone: '٠٥٥٣٣٣٣٣٣٣',
+    cuisine: 'مشاوي',
+  },
+  {
+    name: 'لمة مشاوي وادي الدواسر',
+    image: require('../images/وادي_الدواسر/rest6.jpg'),
+    description: 'مطعم متخصص في المشويات والأطباق الشعبية.',
+    address: 'وادي الدواسر',
+    phone: '٠٥٥٤٤٤٤٤٤٤',
+    cuisine: 'مشاوي',
+  },
+  {
+    name: 'كوجا مطعم برجر',
+    image: require('../images/وادي_الدواسر/rest7.jpg'),
+    description: 'مطعم برجر يقدم خيارات متنوعة بنكهات مميزة.',
+    address: 'وادي الدواسر',
+    phone: '٠٥٥٥٥٥٥٥٥٥',
+    cuisine: 'برجر',
+  },
+  {
+    name: 'بيت المدوره حق قطور',
+    image: require('../images/وادي_الدواسر/rest8.jpg'),
+    description: 'مطعم يقدم الأكلات الشعبية التقليدية.',
+    address: 'وادي الدواسر',
+    phone: '٠٥٥٦٦٦٦٦٦٦',
+    cuisine: 'شعبي',
+  },
+  {
+    name: 'كوفي ثري كبز',
+    image: require('../images/وادي_الدواسر/rest9.jpg'),
+    description: 'كافيه يقدم القهوة المختصة والمشروبات الساخنة.',
+    address: 'الخماسين - وادي الدواسر',
+    phone: '٠٥٥٧٧٧٧٧٧٧',
+    cuisine: 'كافيه',
+  },
+  {
+    name: 'كوفي فوغ',
+    image: require('../images/وادي_الدواسر/rest10.jpg'),
+    description: 'كافيه عصري بأجواء هادئة ومميزة.',
+    address: 'الخماسين - وادي الدواسر',
+    phone: '٠٥٥٨٨٨٨٨٨٨',
+    cuisine: 'كافيه',
+  },
+  {
+    name: 'كوفي فيد',
+    image: require('../images/وادي_الدواسر/rest11.jpg'),
+    description: 'كافيه يقدم مشروبات متنوعة وجلسات مريحة.',
+    address: 'النويعمة - وادي الدواسر',
+    phone: '٠٥٥٩٩٩٩٩٩٩',
+    cuisine: 'كافيه',
+  },
+  {
+    name: 'كوفي دارك',
+    image: require('../images/وادي_الدواسر/rest12.jpg'),
+    description: 'كافيه بطابع هادئ ومشروبات مميزة.',
+    address: 'الخماسين - وادي الدواسر',
+    phone: '٠٥٦١١١١١١١',
+    cuisine: 'كافيه',
+  },
+  {
+    name: 'كوفي ويلا',
+    image: require('../images/وادي_الدواسر/rest13.jpg'),
+    description: 'مربط يضم كافيه ومطعم وتدريب الفروسية.',
+    address: 'الخماسين - وادي الدواسر',
+    phone: '٠٥٦٢٢٢٢٢٢٢',
+    cuisine: 'كافيه ومطعم',
   }
 ],
 
