@@ -247,7 +247,7 @@ const Header = () => {
       {/* Dropdown menu for small screens */}
       <DropdownMenu isOpen={isMenuOpen}>
         <Link to="/">الرئيسية</Link>
-        <Link to="/about">عن أثر</Link>
+        <Link to="/about">عن مدهال</Link>
         <Link to="/acplaces">الأماكن الأثرية</Link>
         <Link to="/contact">تواصل معنا</Link>
         {isLoggedIn ? (
