@@ -609,9 +609,9 @@ restaurants: [
     cuisine: 'برجر',
   },
   {
-    name: 'بيت المدوره حق قطور',
+    name: 'بيت  الدور حق قطور',
     image: require('../images/وادي_الدواسر/rest8.jpg'),
-    description: 'مطعم يقدم الأكلات الشعبية التقليدية.',
+    description:  'مطعم يقدم فطور .',
     address: 'وادي الدواسر',
     phone: '٠٥٥٦٦٦٦٦٦٦',
     cuisine: 'شعبي',
