@@ -609,7 +609,7 @@ restaurants: [
     cuisine: 'برجر',
   },
   {
-    name: 'بيت  الدور حق قطور',
+    name: 'بيت  المدورة ',
     image: require('../images/وادي_الدواسر/rest8.jpg'),
     description:  'مطعم يقدم فطور .',
     address: 'وادي الدواسر',
