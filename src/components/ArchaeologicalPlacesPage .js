@@ -596,7 +596,7 @@ restaurants: [
   return (
     <Container>
       <CitiesSection>
-        <SectionTitle>المدن الأثرية</SectionTitle>
+       
         <CitiesGrid>
           {Object.keys(citiesData).map((city) => (
             <CityCard
