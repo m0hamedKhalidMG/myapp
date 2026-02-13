@@ -207,7 +207,7 @@ const Header = () => {
           className={activeButton === 'about' ? 'active' : ''}
           onClick={() => handleClick('about')}
         >
-          عن أثر {activeButton === 'about' && '▼'}
+          عن مدهال {activeButton === 'about' && '▼'}
         </Link>
         
         <ServicesDropdown>
