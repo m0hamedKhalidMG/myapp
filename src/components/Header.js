@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
-import logoImage from '../images/logo.jpg'; // Import logo image
+import logoImage from '../images/Copilot_20260213_182128.png'; // Import logo image
 import { Link, useLocation, useNavigate } from 'react-router-dom'; // Update import
 
 // Header container styling
