@@ -1,221 +1,65 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import newsImage1 from '../images/qq.jpeg'; // صورة تخص الخبر الأول
-import newsImage2 from '../images/w.jpeg'; // صورة تخص الخبر الثاني
-import newsImage3 from '../images/qq.jpeg'; // صورة تخص الخبر الثالث
-import newsImage5 from '../images/i.jpeg'; // صورة تخص الخبر الخامس
-import batryImage from '../images/batry.png';
-import banomeImage from '../images/banome.jpg';
+import batryImage from '../images/2.jpg';
 
-const HomeContainer = styled.div`
-  font-family: '29LT Riwaya', sans-serif !important;
-  padding: 20px !important;
-  direction: rtl !important;
-  background-color: #f1ede1 !important;
+const PageContainer = styled.div`
+  font-family: '29LT Riwaya', sans-serif;
+  direction: rtl;
+  background-color: #f1ede1;
+  text-align: center;
+  padding: 40px 20px;
+  position: relative;
+`;
+
+
+const ArabicTitle = styled.h1`
+  color: #6b0f1a;
+  font-size: 42px;
+  margin-bottom: 30px;
 
   @media (min-width: 1024px) {
-    padding: 40px !important;
+    font-size: 60px;
   }
 `;
 
-const Banner = styled.div`
-  width: 100% !important;
-  height: 300px !important;
-  background-image: url(${batryImage}) !important;
-  background-size: cover !important;
-  background-position: center !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;
-
-  color: #f1ede1 !important;
-  font-family: '29LT Riwaya', sans-serif !important;
-  font-size: 72px !important;
-  font-weight: bold !important;
-  letter-spacing: 0.05em !important;
-  line-height: 1.2 !important;
-
-  @media (min-width: 1024px) {
-    height: 400px !important;
-    font-size: 90px !important;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 50px !important;
-    height: 300px !important;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 36px !important;
-    height: 200px !important;
-  }
+const ImageWrapper = styled.div`
+  width: 100%;
+  max-width:  400px;
+  height: 250px;
+  margin: 0 auto;
+  background-image: url(${batryImage});
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
 `;
 
-const Section = styled.section`
-  margin: 20px 0 !important;
-  padding: 20px !important;
-  background-color: #f1ede1 !important;
-  border-radius: 10px !important;
+const EnglishText = styled.h2`
+  margin-top: 30px;
+  color: #6b0f1a;
+  font-size: 28px;
+  direction: ltr;
 
   @media (min-width: 1024px) {
-    margin: 40px 0 !important;
-    padding: 30px !important;
-  }
-`;
-
-const Title = styled.h2`
-  color: #986c4a !important;
-  font-size: 22px !important;
-  margin-bottom: 10px !important;
-
-  @media (min-width: 1024px) {
-    font-size: 30px !important;
-  }
-`;
-
-const ImageContainer = styled.div`
-  width: 50% !important;
-  height: 300px !important;
-  background-color: #e0e0e0 !important;
-  background-image: url(${banomeImage}) !important;
-  background-size: cover !important;
-  background-position: center !important;
-  margin-bottom: 20px !important;
-  border-radius: 10px !important;
-  cursor: pointer; /* إضافة مؤشر اليد */
-
-  @media (min-width: 1024px) {
-    height: 300px !important;
-  }
-`;
-
-const NewsSection = styled.div`
-  margin-top: 40px !important;
-  display: flex !important;
-  flex-direction: column !important;
-
-  @media (min-width: 1024px) {
-    flex-direction: column !important;
-    gap: 20px !important;
-  }
-`;
-
-const NewsGrid = styled.div`
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: space-between !important;
-  gap: 20px !important;
-
-  @media (min-width: 1024px) {
-    flex-direction: row !important;
-    gap: 10px !important;
-  }
-`;
-
-const NewsItem = styled.div`
-  background-color: #f1ede1 !important;
-  color: #986c4a !important;
-  padding: 10px !important;
-  border-radius: 8px !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  text-align: center !important;
-  width: 100% !important;
-  height: 300px !important;
-
-  @media (min-width: 1024px) {
-    width: 19% !important; /* عرض 19% لكل عنصر لضمان وجود 5 عناصر في الصف */
-  }
-`;
-
-const NewsImage = styled.img`
-  width: 100% !important;
-  height: 150px !important;
-  border-radius: 8px !important;
-  object-fit: cover !important;
-  margin-bottom: 10px !important;
-
-  @media (min-width: 1024px) {
-    height: 180px !important;
-  }
-`;
-
-const NewsText = styled.p`
-  font-size: 16px !important;
-
-  @media (min-width: 1024px) {
-    font-size: 18px !important;
+    font-size: 36px;
   }
 `;
 
 const Home = () => {
-  const navigate = useNavigate(); // استخدم الـ useNavigate للتوجيه
-
-  const handleImageClick = () => {
-    navigate('/landmark-details'); // توجيه المستخدم إلى صفحة التفاصيل
-  };
   return (
-    <HomeContainer>
-      <Banner></Banner>
-      <Section>
-        <Title>أهم الآثار في المملكة</Title>
-        <ImageContainer onClick={handleImageClick} />
-      </Section>
+    <PageContainer>
 
-      <NewsSection>
-        <Title>آخر الأخبار</Title>
-        <NewsGrid>
-          <NewsItem
-            as="a"
-            href="https://sabq.org/saudia/hrmxs6"
-            target="_blank"
-          >
-            <NewsImage src={newsImage1} alt="خبر" />
-            <NewsText>
-              تعرف على 25 موقعاً أثرياً اعتمدتهم "السياحة" بـ8 مناطق.. 
-              تتصدر
-            </NewsText>
-          </NewsItem>
-          <NewsItem
-            as="a"
-            href="https://sabq.org/saudia/2hhhzf6l7f"
-            target="_blank"
-          >
-            <NewsImage src={newsImage2} alt="خبر" />
-            <NewsText>
-               العثور على 25 ألفًا من المواد الأثرية تعود
-              أقدمها إلى عصر الخلفاء الراشدين
-            </NewsText>
-          </NewsItem>
-          <NewsItem
-            as="a"
-            href="https://sabq.org/saudia/seocjo6bqo"
-            target="_blank"
-          >
-            <NewsImage src={newsImage3} alt="خبر" />
-            <NewsText>
-              "نيوزويك" تتحدث عن اكتشاف 25 ألف قطعة أثرية  "..
-              و"هابيوت": "إضافة قيمة" لعلم الآثار بالمملكة
-            </NewsText>
-          </NewsItem>
-         
-          
-          <NewsItem
-            as="a"
-            href="https://www.alarabiya.net/amp/saudi-today/2021/08/06/-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D8%A7%D8%AB-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D9%88%D8%AB%D9%91%D9%82-14-%D9%85%D9%88%D9%82%D8%B9%D8%A7%D9%8B-%D8%A3%D8%AB%D8%B1%D9%8A%D8%A7%D9%8B-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%AC%D9%84-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%84%D9%84%D8%A2%D8%AB%D8%A7%D8%B1-"
-            target="_blank"
-          >
-            <NewsImage src={newsImage5} alt="خبر" />
-            <NewsText>
-              هيئة التراث توثق 14 موقعًا أثريًا في السجل الوطني
-            </NewsText>
-          </NewsItem>
-        </NewsGrid>
-      </NewsSection>
-    </HomeContainer>
+
+      <ArabicTitle>
+        بوصلتنا نحو أجمل الوجهات
+      </ArabicTitle>
+
+      <ImageWrapper />
+
+      <EnglishText>
+        Our compass to the most beautiful destinations
+      </EnglishText>
+
+    </PageContainer>
   );
 };
 

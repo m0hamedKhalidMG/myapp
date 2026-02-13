@@ -194,7 +194,7 @@ const ArchaeologicalPlacesPage = () => {
   const attractionsRef = useRef(null);
 
   const citiesData = {
-    القصيم: {
+    'Al Qassim': {
       mainImage: require('../images/القصيم/1.jpg'),
       attractions: {
         images: [
@@ -281,7 +281,7 @@ const ArchaeologicalPlacesPage = () => {
         },
       ],
     },
-    الجوف: {
+    'Al jouf': {
       mainImage: require('../images/الجوف/1.jpg'),
       attractions: {
         images: [
@@ -352,7 +352,7 @@ const ArchaeologicalPlacesPage = () => {
         },
       ],
     },
-    تبوك: {
+   ' Tabuk': {
       mainImage: require('../images/تبوك/1.jpg'),
       attractions: {
         images: [
@@ -448,8 +448,8 @@ const ArchaeologicalPlacesPage = () => {
         },
       ],
     },
-    'وادي الدواسر': {
-      mainImage: require('../images/وادي_الدواسر/1.jpg'),
+    'Wadi Dawsar': {
+      mainImage: require('../images/وادي_الدواسر/main.jpeg'),
       attractions: {
         images: [
           require('../images/وادي_الدواسر/1.jpg'),
@@ -478,51 +478,52 @@ const ArchaeologicalPlacesPage = () => {
 ]
 
       },
-      hotels: [
-        {
-          name: 'فندق الوادي الدولي',
-          image: require('../images/وادي_الدواسر/hotel1.jpg'),
-          description: 'فندق فاخر مع خدمات مميزة في قلب وادي الدواسر.',
-          address: 'وادي الدواسر - طريق الملك فهد',
-          phone: '٠١٧٧٨٣٣٣٣٣',
-          rating: '٤ نجوم',
-        },
-        {
-          name: 'فندق الدواسر بلازا',
-          image: require('../images/وادي_الدواسر/hotel2.jpg'),
-          description: 'فندق حديث مع غرف مريحة ومسبح.',
-          address: 'وادي الدواسر - حي الخالدية',
-          phone: '٠١٧٧٨٤٤٤٤٤',
-          rating: '٤ نجوم',
-        },
-        {
-          name: 'فندق النخيل',
-          image: require('../images/وادي_الدواسر/hotel3.jpg'),
-          description: 'فندق اقتصادي مع إطلالة على مزارع النخيل.',
-          address: 'وادي الدواسر - طريق الملك عبدالعزيز',
-          phone: '٠١٧٧٨٥٥٥٥٥',
-          rating: '٣ نجوم',
-        },
-      ],
-      restaurants: [
-        {
-          name: 'مطعم الوادي التراثي',
-          image: require('../images/وادي_الدواسر/rest1.jpg'),
-          description: 'مطعم يقدم المأكولات الجنوبية التقليدية.',
-          address: 'وادي الدواسر - حي الفيصلية',
-          phone: '٠١٧٧٨٦٦٦٦٦',
-          cuisine: 'جنوبي',
-        },
-        {
-          name: 'مطعم النخلة',
-          image: require('../images/وادي_الدواسر/rest2.jpg'),
-          description: 'مطعم متخصص في الأطباق الشعبية.',
-          address: 'وادي الدواسر - وسط البلد',
-          phone: '٠١٧٧٨٧٧٧٧٧',
-          cuisine: 'شعبي',
-        },
-       
-      ],
+    hotels: [
+  {
+    name: 'فندق أورينتال باريس',
+    image: require('../images/وادي_الدواسر/oriental.jpg'),
+    description: 'فندق أنيق يوفر إقامة مريحة وخدمات راقية في وادي الدواسر.',
+    address: 'وادي الدواسر - طريق الملك عبدالعزيز',
+    phone: '٠١٧٧٨٨٨٨٨٨',
+    rating: '٤ نجوم',
+  },
+  {
+    name: 'فندق بودل',
+    image: require('../images/وادي_الدواسر/boudl.jpg'),
+    description: 'فندق عصري يتميز بغرف واسعة وخدمات فندقية متكاملة.',
+    address: 'وادي الدواسر - حي الخالدية',
+    phone: '٠١٧٧٨٩٩٩٩٩',
+    rating: '٤ نجوم',
+  },
+  {
+    name: 'فندق أرجان بارك',
+    image: require('../images/وادي_الدواسر/arjan.jpg'),
+    description: 'فندق هادئ مناسب للعائلات مع مرافق متكاملة.',
+    address: 'وادي الدواسر - طريق الملك فهد',
+    phone: '٠١٧٧٨٢٢٢٢٢',
+    rating: '٣ نجوم',
+  }
+],
+
+restaurants: [
+  {
+    name: 'مطعم شوزان',
+    image: require('../images/وادي_الدواسر/new1.jpeg'),
+    description: 'مطعم يقدم تشكيلة متنوعة من الأطباق العربية والعالمية.',
+    address: 'وادي الدواسر - وسط البلد',
+    phone: '٠١٧٧٨٣٤٥٦٧',
+    cuisine: 'عالمي',
+  },
+  {
+    name: 'مطعم سافران',
+    image: require('../images/وادي_الدواسر/new2.jpeg'),
+    description: 'مطعم راقٍ يقدم أطباق مميزة في أجواء عائلية هادئة.',
+    address: 'وادي الدواسر - حي الفيصلية',
+    phone: '٠١٧٧٨٤٥٦٧٨',
+    cuisine: 'متنوع',
+  }
+],
+
     },
   };
 
