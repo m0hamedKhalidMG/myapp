@@ -128,7 +128,7 @@ const Footer = () => {
       </FooterContent>
    
       <p style={{ marginTop: '30px', fontSize: '14px' }}>
-        © 2026 أثر - جميع الحقوق محفوظة
+        © 2026 مدهال - جميع الحقوق محفوظة
       </p>
     </FooterContainer>
   );

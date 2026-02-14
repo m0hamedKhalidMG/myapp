@@ -582,7 +582,7 @@ restaurants: [
     description: 'مطعم يقدم أطباق برجر ومأكولات حديثة.',
     address: 'وادي الدواسر',
     phone: '٠٥٥٢٢٢٢٢٢٢',
-    cuisine: 'برجر',
+    cuisine: 'وجبات سريعه',
   },
   {
     name: 'كافيه سيخ صمونه',
@@ -611,10 +611,10 @@ restaurants: [
   {
     name: 'بيت  المدورة ',
     image: require('../images/وادي_الدواسر/rest8.jpg'),
-    description:  'مطعم يقدم فطور .',
+    description: 'مطعم  يقدم فطور صباحي متنوع وطازج.',
     address: 'وادي الدواسر',
     phone: '٠٥٥٦٦٦٦٦٦٦',
-    cuisine: 'شعبي',
+    cuisine: 'فطور صباحي ',
   },
   {
     name: 'كوفي ثري كبز',
@@ -634,7 +634,7 @@ restaurants: [
   },
   {
     name: 'كوفي فيد',
-    image: require('../images/وادي_الدواسر/rest11.jpg'),
+    image: require('../images/وادي_الدواسر/rest16.jpg'),
     description: 'كافيه يقدم مشروبات متنوعة وجلسات مريحة.',
     address: 'النويعمة - وادي الدواسر',
     phone: '٠٥٥٩٩٩٩٩٩٩',
@@ -651,11 +651,19 @@ restaurants: [
   {
     name: 'كوفي ويلا',
     image: require('../images/وادي_الدواسر/rest13.jpg'),
-    description: 'مربط يضم كافيه ومطعم وتدريب الفروسية.',
+  description: 'كافيه بجلسات مريحه يقدم القهوة المختصة والمشروبات المتنوعة في أجواء هادئة ومناسبة للعائلات.',
     address: 'الخماسين - وادي الدواسر',
     phone: '٠٥٦٢٢٢٢٢٢٢',
     cuisine: 'كافيه ومطعم',
-  }
+  },
+  {
+  name: 'مربط ويلا للفروسية',
+  image: require('../images/وادي_الدواسر/rest15.jpg'),
+  description: 'مربط يضم كافيه ومطعم ويوفر تدريب الفروسية في أجواء ريفية مميزة ومناسبة للعائلات.',
+  address: 'الخماسين - وادي الدواسر',
+  phone: '٠٥٦٢٢٢٢٢٢٢',
+  cuisine: 'كافيه ومطعم وفروسية',
+},
 ],
 
     },
@@ -699,7 +707,6 @@ restaurants: [
               <CardDescription>{hotel.description}</CardDescription>
               <CardInfo>
                 <InfoItem>📍 {hotel.address}</InfoItem>
-                <InfoItem>📞 {hotel.phone}</InfoItem>
                 <InfoItem>⭐ {hotel.rating}</InfoItem>
               </CardInfo>
             </CardContent>
@@ -715,7 +722,6 @@ restaurants: [
               <CardDescription>{restaurant.description}</CardDescription>
               <CardInfo>
                 <InfoItem>📍 {restaurant.address}</InfoItem>
-                <InfoItem>📞 {restaurant.phone}</InfoItem>
                 <InfoItem>🍽️ {restaurant.cuisine}</InfoItem>
               </CardInfo>
             </CardContent>
